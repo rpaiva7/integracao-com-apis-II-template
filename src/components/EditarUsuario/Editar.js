@@ -14,9 +14,7 @@ export const EditarUsuario = (props) => {
 
 
   const getDadosUsuario = () => {
-    axios
-      .get(
-        `${BASE_URL}/${props.id}`,
+    axios.get(`${BASE_URL}/${props.id}`,
         {
           headers: {
             Authorization: AUTH_TOKEN,
